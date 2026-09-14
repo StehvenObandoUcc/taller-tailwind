@@ -31,81 +31,129 @@
       </div>
     </nav>
 
-    <div class="flex-1 flex flex-col gap-5 min-w-0">
-      <!-- Header -->
-      <header class="flex flex-wrap items-center justify-between gap-3">
-        <div class="flex items-center gap-3"><img src="https://i.pravatar.cc/100?img=12" alt="Slimvally" class="w-9 h-9 rounded-full object-cover"><p class="text-xs text-gray-500">Holla, <strong class="text-gray-800">Slimvally</strong></p></div>
-        <div class="order-3 sm:order-none w-full sm:w-60 md:w-64 lg:w-72 flex items-center bg-gray-100 rounded-2xl px-3.5 py-2 gap-2 text-xs focus-within:ring-2 focus-within:ring-orange-200"><svg class="w-4 h-4 text-gray-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path stroke-linecap="round" d="m21 21-4.35-4.35"/></svg><input type="text" placeholder="Search games" class="bg-transparent outline-none w-full text-gray-700 placeholder-gray-400"></div>
-        <div class="flex items-center gap-2">
-          <button class="relative w-9 h-9 rounded-2xl bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-500" title="Notifications"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 0 1-3.46 0"/></svg><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-orange-500 border border-white"></span></button>
-          <button class="relative w-9 h-9 rounded-2xl bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-500" title="Messages"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-orange-500 border border-white"></span></button>
-        </div>
-      </header>
+    <div class="flex-1 grid grid-cols-1 md:grid-cols-12 gap-5 lg:gap-6 min-w-0">
+      <main class="md:col-span-7 lg:col-span-8 flex flex-col gap-5 min-w-0">
 
-      <!-- Hero -->
-      <section class="relative rounded-2xl sm:rounded-3xl overflow-hidden min-h-[190px] sm:h-56 p-5 sm:p-7 flex flex-col justify-between text-white shadow-sm">
-        <img src="https://picsum.photos/id/1074/1200/500" alt="The Forbidden Kingdom" class="absolute inset-0 w-full h-full object-cover">
-        <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/45 to-transparent"></div>
-        <div class="relative z-10 flex flex-col justify-between h-full gap-3">
-          <span class="bg-white/20 backdrop-blur text-[11px] px-3 py-1 rounded-full w-max font-medium">New Arrival</span>
-          <div><h2 class="text-xl sm:text-2xl font-bold leading-tight drop-shadow-sm">The Forbidden Kingdom:<br class="hidden sm:inline"> Adventure War</h2></div>
-          <button class="bg-orange-500 hover:bg-orange-600 active:scale-95 transition-all text-white px-4 py-2 rounded-xl text-xs font-semibold flex items-center gap-2 w-max shadow-md">Play Now <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></button>
-        </div>
-      </section>
+        <!-- Header -->
+        <header class="flex flex-wrap items-center justify-between gap-3">
+          <div class="flex items-center gap-3"><img src="https://i.pravatar.cc/100?img=12" alt="Slimvally" class="w-9 h-9 rounded-full object-cover"><p class="text-xs text-gray-500">Holla, <strong class="text-gray-800">Slimvally</strong></p></div>
+          <div class="order-3 sm:order-none w-full sm:w-60 md:w-64 lg:w-72 flex items-center bg-gray-100 rounded-2xl px-3.5 py-2 gap-2 text-xs focus-within:ring-2 focus-within:ring-orange-200"><svg class="w-4 h-4 text-gray-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path stroke-linecap="round" d="m21 21-4.35-4.35"/></svg><input type="text" placeholder="Search games" class="bg-transparent outline-none w-full text-gray-700 placeholder-gray-400"></div>
+          <div class="flex items-center gap-2">
+            <button class="relative w-9 h-9 rounded-2xl bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-500" title="Notifications"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 0 1-3.46 0"/></svg><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-orange-500 border border-white"></span></button>
+            <button class="relative w-9 h-9 rounded-2xl bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-500" title="Messages"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-orange-500 border border-white"></span></button>
+          </div>
+        </header>
 
-      <!-- Popular Games -->
-      <section class="flex flex-col gap-3">
-        <div class="flex items-center justify-between"><h3 class="font-bold text-gray-800 text-sm">Most Popular Games</h3><a href="#" class="text-xs text-gray-400 hover:text-orange-500">See all</a></div>
-        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-          <article class="relative rounded-2xl overflow-hidden h-44 sm:h-48 p-3 flex flex-col justify-between text-white group shadow-sm">
-            <img src="https://t3.ftcdn.net/jpg/10/90/18/72/360_F_1090187239_6P1B0ygPzdRjsN1YfbIUm39D8XuySel.jpg" alt="Spider Man" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
-            <span class="relative z-10 self-end bg-white/30 backdrop-blur text-[9px] px-2 py-0.5 rounded-full font-medium">Popular</span>
-            <div class="relative z-10"><h4 class="font-bold text-xs truncate">Spider Man</h4><p class="text-[9px] text-gray-300">Action • Adventure</p><div class="flex items-center justify-between mt-1"><span class="text-[9px] text-white tracking-widest">☆☆☆☆☆</span><button class="bg-white/25 hover:bg-white/40 p-1.5 rounded-lg transition-colors" title="Download"><svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg></button></div></div>
-          </article>
-          <article class="relative rounded-2xl overflow-hidden h-44 sm:h-48 p-3 flex flex-col justify-between text-white group shadow-sm">
-            <img src="https://m.media-amazon.com/images/I/81zikBm9miL.jpg" alt="Call of Duty" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
-            <span class="relative z-10 self-end bg-white/30 backdrop-blur text-[9px] px-2 py-0.5 rounded-full font-medium">Popular</span>
-            <div class="relative z-10"><h4 class="font-bold text-xs truncate">Call of Duty</h4><p class="text-[9px] text-gray-300">Action • Adventure</p><div class="flex items-center justify-between mt-1"><span class="text-[9px] text-white tracking-widest">☆☆☆☆☆</span><button class="bg-white/25 hover:bg-white/40 p-1.5 rounded-lg transition-colors" title="Download"><svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg></button></div></div>
-          </article>
-          <article class="relative rounded-2xl overflow-hidden h-44 sm:h-48 p-3 flex flex-col justify-between text-white group shadow-sm">
-            <img src="https://wallpapers.com/images/featured/assassins-creed-odyssey-pictures-c0l3p9wqxo2ufttc.jpg" alt="Assassin's Creed" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
-            <span class="relative z-10 self-end bg-white/30 backdrop-blur text-[9px] px-2 py-0.5 rounded-full font-medium">Popular</span>
-            <div class="relative z-10"><h4 class="font-bold text-xs truncate">Assassin's Creed</h4><p class="text-[9px] text-gray-300">Action • Adventure</p><div class="flex items-center justify-between mt-1"><span class="text-[9px] text-white tracking-widest">☆☆☆☆☆</span><button class="bg-white/25 hover:bg-white/40 p-1.5 rounded-lg transition-colors" title="Download"><svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg></button></div></div>
-          </article>
-          <article class="relative rounded-2xl overflow-hidden h-44 sm:h-48 p-3 flex flex-col justify-between text-white group shadow-sm">
-            <img src="https://wallpapers.com/images/thumbnail/call-of-duty-black-ops-1-rzdsf6w2dl7rwj21.jpg" alt="Call of Duty" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
-            <span class="relative z-10 self-end bg-white/30 backdrop-blur text-[9px] px-2 py-0.5 rounded-full font-medium">Popular</span>
-            <div class="relative z-10"><h4 class="font-bold text-xs truncate">Call of Duty</h4><p class="text-[9px] text-gray-300">Action • Adventure</p><div class="flex items-center justify-between mt-1"><span class="text-[9px] text-white tracking-widest">☆☆☆☆☆</span><button class="bg-white/25 hover:bg-white/40 p-1.5 rounded-lg transition-colors" title="Download"><svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg></button></div></div>
-          </article>
-        </div>
-      </section>
+        <!-- Hero -->
+        <section class="relative rounded-2xl sm:rounded-3xl overflow-hidden min-h-[190px] sm:h-56 p-5 sm:p-7 flex flex-col justify-between text-white shadow-sm">
+          <img src="https://picsum.photos/id/1074/1200/500" alt="The Forbidden Kingdom" class="absolute inset-0 w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/45 to-transparent"></div>
+          <div class="relative z-10 flex flex-col justify-between h-full gap-3">
+            <span class="bg-white/20 backdrop-blur text-[11px] px-3 py-1 rounded-full w-max font-medium">New Arrival</span>
+            <div><h2 class="text-xl sm:text-2xl font-bold leading-tight drop-shadow-sm">The Forbidden Kingdom:<br class="hidden sm:inline"> Adventure War</h2></div>
+            <button class="bg-orange-500 hover:bg-orange-600 active:scale-95 transition-all text-white px-4 py-2 rounded-xl text-xs font-semibold flex items-center gap-2 w-max shadow-md">Play Now <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></button>
+          </div>
+        </section>
 
-      <!-- For You -->
-      <section class="flex flex-col gap-3">
-        <div class="flex items-center justify-between"><h3 class="font-bold text-gray-800 text-sm">For You</h3><a href="#" class="text-xs text-gray-400 hover:text-orange-500">See all</a></div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-          <article class="flex items-center justify-between p-2 rounded-2xl hover:bg-gray-50 transition-colors">
-            <div class="flex items-center gap-3"><img src="https://data.gameflare.com/games/9174/GqQjRsutjsjxei-220-165.jpg" alt="Asphalt Racing" class="w-11 h-11 rounded-xl object-cover shadow-sm"><div><h4 class="font-bold text-xs text-gray-800">Asphalt Racing</h4><p class="text-[10px] text-gray-400">Racing</p><span class="text-[9px] text-amber-400">☆☆☆☆☆</span></div></div>
-            <button class="border border-orange-300 text-orange-500 hover:bg-orange-50 rounded-xl px-3.5 py-1 text-xs font-medium transition-colors">Free</button>
-          </article>
-          <article class="flex items-center justify-between p-2 rounded-2xl hover:bg-gray-50 transition-colors">
-            <div class="flex items-center gap-3"><img src="https://first4figures.com/cdn/shop/files/snake_ee_horizontal_30_bb523e23-2ddb-4361-87e4-f7ba10872c27.jpg" alt="Green Snake" class="w-11 h-11 rounded-xl object-cover shadow-sm"><div><h4 class="font-bold text-xs text-gray-800">Green Snake</h4><p class="text-[10px] text-gray-400">Action</p><span class="text-[9px] text-amber-400">☆☆☆☆☆</span></div></div>
-            <button class="border border-orange-300 text-orange-500 hover:bg-orange-50 rounded-xl px-3.5 py-1 text-xs font-medium transition-colors">$100.00</button>
-          </article>
-          <article class="flex items-center justify-between p-2 rounded-2xl hover:bg-gray-50 transition-colors">
-            <div class="flex items-center gap-3"><img src="https://imgs.search.brave.com/FdzOmJQnXoCUTohDsCb3mf3Sxo-PSAHpajyLWSL3WOo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMubGF1bmNoYm94/LWFwcC5jb20vOTVj/NDZiYjgtMmI0My00/MGZhLWI1YTktOTYx/MmU4OGZhYjI3LnBu/Zw" alt="Ledgend of Alkali" class="w-11 h-11 rounded-xl object-cover shadow-sm"><div><h4 class="font-bold text-xs text-gray-800">Ledgend of Alkali</h4><p class="text-[10px] text-gray-400">Adventure</p><span class="text-[9px] text-amber-400">☆☆☆☆☆</span></div></div>
-            <button class="border border-gray-200 text-gray-400 cursor-default rounded-xl px-3.5 py-1 text-xs font-medium transition-colors">Installed</button>
-          </article>
-          <article class="flex items-center justify-between p-2 rounded-2xl hover:bg-gray-50 transition-colors">
-            <div class="flex items-center gap-3"><img src="https://img.magnific.com/free-vector/medieval-castle-dungeon-with-treasure_107791-29252.jpg?semt=ais_hybrid&w=740&q=80" alt="Reckoning" class="w-11 h-11 rounded-xl object-cover shadow-sm"><div><h4 class="font-bold text-xs text-gray-800">Reckoning</h4><p class="text-[10px] text-gray-400">Action</p><span class="text-[9px] text-amber-400">☆☆☆☆☆</span></div></div>
-            <button class="border border-orange-300 text-orange-500 hover:bg-orange-50 rounded-xl px-3.5 py-1 text-xs font-medium transition-colors">Download</button>
-          </article>
-        </div>
-      </section>
+        <!-- Popular Games -->
+        <section class="flex flex-col gap-3">
+          <div class="flex items-center justify-between"><h3 class="font-bold text-gray-800 text-sm">Most Popular Games</h3><a href="#" class="text-xs text-gray-400 hover:text-orange-500">See all</a></div>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <article class="relative rounded-2xl overflow-hidden h-44 sm:h-48 p-3 flex flex-col justify-between text-white group shadow-sm">
+              <img src="https://t3.ftcdn.net/jpg/10/90/18/72/360_F_1090187239_6P1B0ygPzdRjsN1YfbIUm39D8XuySel.jpg" alt="Spider Man" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
+              <span class="relative z-10 self-end bg-white/30 backdrop-blur text-[9px] px-2 py-0.5 rounded-full font-medium">Popular</span>
+              <div class="relative z-10"><h4 class="font-bold text-xs truncate">Spider Man</h4><p class="text-[9px] text-gray-300">Action • Adventure</p><div class="flex items-center justify-between mt-1"><span class="text-[9px] text-white tracking-widest">☆☆☆☆☆</span><button class="bg-white/25 hover:bg-white/40 p-1.5 rounded-lg transition-colors" title="Download"><svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg></button></div></div>
+            </article>
+            <article class="relative rounded-2xl overflow-hidden h-44 sm:h-48 p-3 flex flex-col justify-between text-white group shadow-sm">
+              <img src="https://m.media-amazon.com/images/I/81zikBm9miL.jpg" alt="Call of Duty" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
+              <span class="relative z-10 self-end bg-white/30 backdrop-blur text-[9px] px-2 py-0.5 rounded-full font-medium">Popular</span>
+              <div class="relative z-10"><h4 class="font-bold text-xs truncate">Call of Duty</h4><p class="text-[9px] text-gray-300">Action • Adventure</p><div class="flex items-center justify-between mt-1"><span class="text-[9px] text-white tracking-widest">☆☆☆☆☆</span><button class="bg-white/25 hover:bg-white/40 p-1.5 rounded-lg transition-colors" title="Download"><svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg></button></div></div>
+            </article>
+            <article class="relative rounded-2xl overflow-hidden h-44 sm:h-48 p-3 flex flex-col justify-between text-white group shadow-sm">
+              <img src="https://wallpapers.com/images/featured/assassins-creed-odyssey-pictures-c0l3p9wqxo2ufttc.jpg" alt="Assassin's Creed" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
+              <span class="relative z-10 self-end bg-white/30 backdrop-blur text-[9px] px-2 py-0.5 rounded-full font-medium">Popular</span>
+              <div class="relative z-10"><h4 class="font-bold text-xs truncate">Assassin's Creed</h4><p class="text-[9px] text-gray-300">Action • Adventure</p><div class="flex items-center justify-between mt-1"><span class="text-[9px] text-white tracking-widest">☆☆☆☆☆</span><button class="bg-white/25 hover:bg-white/40 p-1.5 rounded-lg transition-colors" title="Download"><svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg></button></div></div>
+            </article>
+            <article class="relative rounded-2xl overflow-hidden h-44 sm:h-48 p-3 flex flex-col justify-between text-white group shadow-sm">
+              <img src="https://wallpapers.com/images/thumbnail/call-of-duty-black-ops-1-rzdsf6w2dl7rwj21.jpg" alt="Call of Duty" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
+              <span class="relative z-10 self-end bg-white/30 backdrop-blur text-[9px] px-2 py-0.5 rounded-full font-medium">Popular</span>
+              <div class="relative z-10"><h4 class="font-bold text-xs truncate">Call of Duty</h4><p class="text-[9px] text-gray-300">Action • Adventure</p><div class="flex items-center justify-between mt-1"><span class="text-[9px] text-white tracking-widest">☆☆☆☆☆</span><button class="bg-white/25 hover:bg-white/40 p-1.5 rounded-lg transition-colors" title="Download"><svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg></button></div></div>
+            </article>
+          </div>
+        </section>
+
+        <!-- For You -->
+        <section class="flex flex-col gap-3">
+          <div class="flex items-center justify-between"><h3 class="font-bold text-gray-800 text-sm">For You</h3><a href="#" class="text-xs text-gray-400 hover:text-orange-500">See all</a></div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+            <article class="flex items-center justify-between p-2 rounded-2xl hover:bg-gray-50 transition-colors">
+              <div class="flex items-center gap-3"><img src="https://data.gameflare.com/games/9174/GqQjRsutjsjxei-220-165.jpg" alt="Asphalt Racing" class="w-11 h-11 rounded-xl object-cover shadow-sm"><div><h4 class="font-bold text-xs text-gray-800">Asphalt Racing</h4><p class="text-[10px] text-gray-400">Racing</p><span class="text-[9px] text-amber-400">☆☆☆☆☆</span></div></div>
+              <button class="border border-orange-300 text-orange-500 hover:bg-orange-50 rounded-xl px-3.5 py-1 text-xs font-medium transition-colors">Free</button>
+            </article>
+            <article class="flex items-center justify-between p-2 rounded-2xl hover:bg-gray-50 transition-colors">
+              <div class="flex items-center gap-3"><img src="https://first4figures.com/cdn/shop/files/snake_ee_horizontal_30_bb523e23-2ddb-4361-87e4-f7ba10872c27.jpg" alt="Green Snake" class="w-11 h-11 rounded-xl object-cover shadow-sm"><div><h4 class="font-bold text-xs text-gray-800">Green Snake</h4><p class="text-[10px] text-gray-400">Action</p><span class="text-[9px] text-amber-400">☆☆☆☆☆</span></div></div>
+              <button class="border border-orange-300 text-orange-500 hover:bg-orange-50 rounded-xl px-3.5 py-1 text-xs font-medium transition-colors">$100.00</button>
+            </article>
+            <article class="flex items-center justify-between p-2 rounded-2xl hover:bg-gray-50 transition-colors">
+              <div class="flex items-center gap-3"><img src="https://imgs.search.brave.com/FdzOmJQnXoCUTohDsCb3mf3Sxo-PSAHpajyLWSL3WOo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMubGF1bmNoYm94/LWFwcC5jb20vOTVj/NDZiYjgtMmI0My00/MGZhLWI1YTktOTYx/MmU4OGZhYjI3LnBu/Zw" alt="Ledgend of Alkali" class="w-11 h-11 rounded-xl object-cover shadow-sm"><div><h4 class="font-bold text-xs text-gray-800">Ledgend of Alkali</h4><p class="text-[10px] text-gray-400">Adventure</p><span class="text-[9px] text-amber-400">☆☆☆☆☆</span></div></div>
+              <button class="border border-gray-200 text-gray-400 cursor-default rounded-xl px-3.5 py-1 text-xs font-medium transition-colors">Installed</button>
+            </article>
+            <article class="flex items-center justify-between p-2 rounded-2xl hover:bg-gray-50 transition-colors">
+              <div class="flex items-center gap-3"><img src="https://img.magnific.com/free-vector/medieval-castle-dungeon-with-treasure_107791-29252.jpg?semt=ais_hybrid&w=740&q=80" alt="Reckoning" class="w-11 h-11 rounded-xl object-cover shadow-sm"><div><h4 class="font-bold text-xs text-gray-800">Reckoning</h4><p class="text-[10px] text-gray-400">Action</p><span class="text-[9px] text-amber-400">☆☆☆☆☆</span></div></div>
+              <button class="border border-orange-300 text-orange-500 hover:bg-orange-50 rounded-xl px-3.5 py-1 text-xs font-medium transition-colors">Download</button>
+            </article>
+          </div>
+        </section>
+
+      </main>
+
+      <aside class="md:col-span-5 lg:col-span-4 flex flex-col gap-5 w-full">
+
+        <!-- Live Games -->
+        <section class="flex flex-col gap-3">
+          <div class="flex items-center justify-between"><h3 class="font-bold text-gray-800 text-sm">Live Games <span class="text-gray-400 font-normal">(25)</span></h3><a href="#" class="text-xs text-gray-400 hover:text-orange-500">See all</a></div>
+          <div class="flex flex-col gap-2.5">
+            <article class="flex items-center justify-between p-1.5 sm:p-2 rounded-2xl hover:bg-gray-50 transition-colors">
+              <div class="flex items-center gap-3"><div class="relative shrink-0"><img src="https://images.sftcdn.net/images/t_app-cover-s,f_auto/p/1964aca0-3d1e-490b-8fc3-4f28a52954fd/1795044594/heavy-traffic-racer-speedy-screenshot.png" alt="Speedy Traffic" class="w-10 h-10 rounded-xl object-cover shadow-sm"><span class="absolute -top-1 -right-1 w-2.5 h-2.5 bg-red-500 border-2 border-white rounded-full"></span></div><div><h4 class="font-bold text-xs text-gray-800">Speedy Traffic</h4><p class="text-[10px] text-gray-400">14.5k Viewers</p></div></div>
+              <button class="border border-orange-300 hover:bg-orange-500 hover:text-white text-orange-500 text-xs px-3.5 py-1 rounded-xl font-medium transition-all">Join</button>
+            </article>
+            <article class="flex items-center justify-between p-1.5 sm:p-2 rounded-2xl hover:bg-gray-50 transition-colors">
+              <div class="flex items-center gap-3"><div class="relative shrink-0"><img src="https://w0.peakpx.com/wallpaper/270/433/HD-wallpaper-mortal-kombat-mortal-kombat-movie-mortal-kombat-movies-2021-movies-thumbnail.jpg" alt="Mortal Kombat" class="w-10 h-10 rounded-xl object-cover shadow-sm"><span class="absolute -top-1 -right-1 w-2.5 h-2.5 bg-red-500 border-2 border-white rounded-full"></span></div><div><h4 class="font-bold text-xs text-gray-800">Mortal Kombat</h4><p class="text-[10px] text-gray-400">14.5k Viewers</p></div></div>
+              <button class="border border-orange-300 hover:bg-orange-500 hover:text-white text-orange-500 text-xs px-3.5 py-1 rounded-xl font-medium transition-all">Join</button>
+            </article>
+            <article class="flex items-center justify-between p-1.5 sm:p-2 rounded-2xl hover:bg-gray-50 transition-colors">
+              <div class="flex items-center gap-3"><div class="relative shrink-0"><img src="https://thumb.wikimedia.org/wikipedia/en/thumb/5/5b/Left4Dead_Windows_cover.jpg/250px-Left4Dead_Windows_cover.jpg" alt="Living Dead" class="w-10 h-10 rounded-xl object-cover shadow-sm"><span class="absolute -top-1 -right-1 w-2.5 h-2.5 bg-red-500 border-2 border-white rounded-full"></span></div><div><h4 class="font-bold text-xs text-gray-800">Living Dead</h4><p class="text-[10px] text-gray-400">14.5k Viewers</p></div></div>
+              <button class="border border-orange-300 hover:bg-orange-500 hover:text-white text-orange-500 text-xs px-3.5 py-1 rounded-xl font-medium transition-all">Join</button>
+            </article>
+            <article class="flex items-center justify-between p-1.5 sm:p-2 rounded-2xl hover:bg-gray-50 transition-colors">
+              <div class="flex items-center gap-3"><div class="relative shrink-0"><img src="https://platform.goldenstateofmind.com/wp-content/uploads/sites/89/chorus/uploads/chorus_asset/file/25989405/1767731449.jpg?quality=90&strip=all&crop=0,0,100,100&w=2400" alt="Warriors" class="w-10 h-10 rounded-xl object-cover shadow-sm"><span class="absolute -top-1 -right-1 w-2.5 h-2.5 bg-red-500 border-2 border-white rounded-full"></span></div><div><h4 class="font-bold text-xs text-gray-800">Warriors</h4><p class="text-[10px] text-gray-400">14.5k Viewers</p></div></div>
+              <button class="border border-orange-300 hover:bg-orange-500 hover:text-white text-orange-500 text-xs px-3.5 py-1 rounded-xl font-medium transition-all">Join</button>
+            </article>
+          </div>
+        </section>
+
+        <!-- Grand Theft Card -->
+        <section class="border border-gray-100 rounded-2xl p-4 bg-white shadow-sm flex flex-col gap-2.5">
+          <img src="https://img.youtube.com/vi/tJbzMqJGH4k/maxresdefault.jpg" alt="Grand Theft" class="w-full h-32 sm:h-36 rounded-xl object-cover">
+          <div class="flex items-center justify-between">
+            <div><h4 class="font-bold text-xs text-gray-800">Grand Theft</h4><p class="text-[10px] text-gray-400">Action • Adventure</p></div>
+            <button class="p-1.5 rounded-lg border border-orange-200 text-orange-400 hover:bg-orange-50 transition-colors" title="Share"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8m-4-6-4-4-4 4m4-4v13"/></svg></button>
+          </div>
+          <span class="text-[9px] text-amber-400">☆☆☆☆☆</span>
+          <p class="text-[9px] text-gray-400 leading-relaxed">Grand Theft Auto V is an action-adventure game played from either a third-person or first-person perspective. Players complete missions—linear scenarios with set objectives—to progress through the story. Outside of the missions, players may freely roam the open world.</p>
+          <div class="grid grid-cols-3 text-center py-2 border-y border-gray-100">
+            <div><p class="font-bold text-xs text-gray-800">4.8<span class="text-[9px] font-normal text-gray-400">/5</span></p><p class="text-[9px] text-gray-400">Ratings</p></div>
+            <div><p class="font-bold text-xs text-gray-800">19.5 GB</p><p class="text-[9px] text-gray-400">Size</p></div>
+            <div><p class="font-bold text-xs text-gray-800">2.21 <span class="text-[9px] font-normal">Million</span></p><p class="text-[9px] text-gray-400">Downloads</p></div>
+          </div>
+          <button class="w-full py-2 bg-gradient-to-r from-orange-400 to-orange-500 hover:from-orange-500 hover:to-orange-600 active:scale-[0.99] text-white rounded-xl text-xs font-semibold shadow-sm transition-all text-center">Download</button>
+        </section>
+
+      </aside>
     </div>
 
   </div>
